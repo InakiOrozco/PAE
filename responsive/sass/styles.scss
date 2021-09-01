@@ -1,0 +1,32 @@
+@import 'grid';
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+button.primary {
+  background-color: gray;
+}
+
+.temas {
+  border: solid 1px red;
+}
+
+.temas > div {
+  text-align: center;
+  width: 100%;
+  background-color: lightblue;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.ALIN {
+  text-align: center;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
