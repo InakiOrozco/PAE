@@ -2,7 +2,7 @@ import { Noticia } from './noticias.js';
 
 declare let Handlebars;
 
-document.getElementById("barra").oninput = function(){
+document.getElementById("boton").onclick = function(){
     const noticia = new Noticia();
     noticia.getAll().then(response => {
         console.log('Noticias', response.data);
@@ -14,7 +14,7 @@ document.getElementById("barra").oninput = function(){
     }).catch(err => {
         console.error('Algo falló!');
     });
-}
+};
 
 /*
 (function(){

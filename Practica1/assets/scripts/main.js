@@ -1,5 +1,5 @@
 import { Noticia } from './noticias.js';
-document.getElementById("barra").oninput = function () {
+document.getElementById("boton").onclick = function () {
     const noticia = new Noticia();
     noticia.getAll().then(response => {
         console.log('Noticias', response.data);
